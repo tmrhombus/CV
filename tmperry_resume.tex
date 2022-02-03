@@ -1,0 +1,120 @@
+
+\documentclass[letterpaper,12pt]{article} % Default font size and paper size
+%\documentclass[letterpaper,10pt]{article} % Default font size and paper size
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{fontspec}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage[cm]{fullpage}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{tabulary}
+
+\usepackage{array}
+\newcolumntype{a}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{b}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{c}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Thomas Mastrianni \textsc{Perry}, Ph.D.}\par} % Your name
+%\par{\centering{\Huge Thomas Mastrianni \textsc{Perry}, Ph.D.}\bigskip\par} % Your name
+\par{\centering  \href{mailto:tomperry7@gmail.com}{tomperry7@gmail.com} | (518) 859 2623 | Santa Fe, NM | \textsc{github:} \href{https://www.github.com/tmrhombus}{tmrhombus}\par}
+
+% \section{Personal Data}
+% 
+% \begin{tabular}{rl}
+%    % \textsc{Location:} & Santa Fe, NM  \\
+%    % \textsc{Physical Address:} & 130 County Road 74, Tesuque, NM 87501 \\
+%    % \textsc{Mailing Address:} & PO BOX 328, Tesuque, NM 87505  \\
+%    % \textsc{Skype:} & tmrhombus \\
+%  \textsc{email:} & \href{mailto:tomperry7@gmail.com}{tomperry7@gmail.com},  \textsc{phone:} (518) 859 2623, \textsc{Location:} Santa Fe, NM  \\
+%  \textsc{github:} & \href{https://www.github.com/tmrhombus}{tmrhombus}, \textsc{skype:} tmrhombus
+% \end{tabular}
+% 
+% \vspace{9pt}
+
+I was formally trained at the world's leading particle physics laboratory (CERN) to collect, clean, analyze, and present data on the petabyte scale. As a graduate student and postdoc there, I worked primarily in \texttt{c++} and \texttt{Python} in \texttt{Linux}-based environments to lead analyses and datataking operations. Recently I have been teaching and writing,  and am ready to bring my technical skills to industry.
+
+% \hrule
+%\hrulefill
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabular}{rl}	
+  %2016 & {\bf Ph.D. in Physics} (particle physics minor) University of Wisconsin--Madison, Madison, WI \\
+  2016 & {\bf Ph.D. in Physics} University of Wisconsin--Madison, Madison, WI \\
+   {}  & \emph{A measurement of $Wb\overline{b}$ production and a search for monophoton signals of dark}\\
+   {}  & \emph{matter using the CMS detector at the CERN LHC} \\
+
+   2009 & {\bf B.S. in Physics} (astrophysics minor) Union College, Schenectady, NY \\
+   {}  & Magna Cum Laude with departmental honors \\
+   {}  & \emph{Multi-frequency VLBI imaging of two compact symmetric objects} \\
+\end{tabular}
+
+\vspace{9pt}
+
+  %  \begin{tabular}{rrl}	
+  %    % 2016 & {\bf Ph.D. in Physics} (particle physics minor) University of Wisconsin--Madison, Madison, WI \\
+  %  Education & 2016 & {\bf Ph.D. in Physics} University of Wisconsin--Madison, Madison, WI \\
+  %    {}  & {}  & \emph{A measurement of $Wb\overline{b}$ production and a search for monophoton signals of dark}\\
+  %    {}  & {}  & \emph{matter using the CMS detector at the CERN LHC} \\
+  %  
+  %    {}  & 2009 & {\bf B.S. in Physics} (astrophysics minor) Union College, Schenectady, NY \\
+  %    {}  & {}  & Magna Cum Laude with departmental honors \\
+  %    {}  & {}  & \emph{Multi-frequency VLBI imaging of two compact symmetric objects} \\
+  %  \end{tabular}
+  %  
+  %  \vspace{9pt}
+
+%----------------------------------------------------------------------------------------
+%	Experience
+%----------------------------------------------------------------------------------------
+\section{Relevant Experience}
+ {\large {\bf Graduate Research Assistant} 2012-2016, University of Wisconsin and CERN} \\
+  Collected and analyzed data from the CERN Large Hadron Collider (LHC), specializing in heavy-flavor physics with displaced secondary vertices and dark matter searches  \\ % , as well as monitoring and control of network-connected high-speed data acquisition and cleaning hardware  \\
+ - contributed to the collection and analysis of the largest physics dataset in history \\
+ - wrote software for efficient cleaning, data-driven analysis, statistical modeling, interpretation, and visualization of petabyte-scale datasets, including machine learning techniques (neural net and BDT) \\
+ - ran analysis software on a distributed computing network using HTCondor, stored in HDFS filesystems \\
+ - took shifts in the control room and served as on-call expert monitoring data-taking, diagnosing problems, and delivering solutions in a fast-paced, high-pressure environment  \\
+ - served as editor for one published paper, contributed to eight others 
+
+ {\large {\bf Postdoctoral Research Fellow} 2016-2018, Florida State University and CERN}  \\
+ Lead analyses using the Higgs boson to search for evidence of new physics, and was appointed to HCAL Operations Manager, overseeing all aspects of data collection for one of only four CMS subdetectors. \\ % systems on the CMS detector.  \\
+- wrote custom codebase for physics analysis in {\texttt c++} that is still in use 4 years later \\
+- trained and supervised subdetector experts who monitored datataking in real time, chaired weekly meetings of \~30 physicists, carried a CERN phone 24/7 for emergency response \\
+- had the authority to speak on behalf of a subdetector in a 3500+ person international collaboration
+
+ {\large {\bf Math Teacher/Tutor} 2019-present, Santa Fe Preparatory School} \\
+ Taught algebra and calculus, as well as tutoring privately \\
+- improved presentation skills, organization, and communication with nonexperts 
+
+\section{Skills}
+statistical analysis and interpretation of large datasets; numerical optimization and fitting of partially-correlated variables; high-speed, parallel, and distributed computing; object-oriented and functional programming; collaborative software design in divserse groups; technical and nontechnical communication; critical thinking and problem solving
+
+\texttt{c++}, \texttt{Python}, \texttt{bash} (\texttt{csh}, \texttt{tsh}, ...), \texttt{Linux/Unix}, \texttt{Git}, \texttt{ROOT}, \texttt{HTCondor}, \LaTeX, \texttt{VIM}
+
+
+
+\end{document}
