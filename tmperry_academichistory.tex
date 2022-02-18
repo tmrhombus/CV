@@ -27,9 +27,15 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage{fancyhdr}
+
 \begin{document}
 
-\pagestyle{empty} % Removes page numbering
+%\pagestyle{empty} % Removes page numbering
+\pagestyle{fancy}
+\pagenumbering{gobble}
+\fancyhead[R]{\textbf{T. Mastrianni Perry}}
+\thispagestyle{empty}
 
 \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
